@@ -1,6 +1,8 @@
 <?php
 require("http.php");
 
+echo date("Y-m-d H:i:s") . PHP_EOL . PHP_EOL;
+
 $positiveVoteTypes = [
 	"+1",
 	"laugh",
