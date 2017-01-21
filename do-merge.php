@@ -80,8 +80,8 @@ var_dump($committersLastWeek);
 
 // Step 4: Calculate thresholds.
 if($totalCommitters >= 10) {
-	$thresholdWeek = $totalCommitters / 20;
-	$thresholdMonth = $totalCommitters / 50;
+	$thresholdWeek = $totalCommitters * 0.1;
+	$thresholdMonth = $totalCommitters * 0.3;
 }
 
 echo "Total committers: $totalCommitters" . PHP_EOL;
