@@ -122,6 +122,7 @@ foreach($votes as $numPR => $voters) {
 		echo http("/repos/GithubGame/1/pulls/$numPR/merge"
 			. "?commit_title=$title"
 			. "&commit_message=$message"
+			. "&merge_method=rebase"
 			, "PUT"
 		) . PHP_EOL;
 	}
